@@ -7,7 +7,7 @@
 }
 
 /*Global*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -27,6 +27,7 @@
         height: 60px;
         position: absolute;
         top: 5%;
+
         &>img {
             object-fit: contain;
             width: 75%;
@@ -39,7 +40,7 @@
         width: inherit;
         height: 65px;
 
-        &>ul{
+        &>ul {
             width: 75%;
             list-style: none;
             display: flex;
@@ -49,24 +50,25 @@
             height: 100%;
             align-content: center;
 
-            &>li{
+            &>li {
                 width: 15%;
                 text-align: center;
                 align-self: center;
                 height: 100%;
                 align-content: center;
 
-                &>a{
-                text-decoration: none;
-                color: white;
-                font-size: 1.5rem;
+                &>a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
 
+                }
             }
-            }
+
             &>li:hover {
                 background-color: blue;
 
-                &>a:hover{
+                &>a:hover {
                     background-color: blue;
                 }
             }
@@ -78,6 +80,33 @@
 
 
 /*Front page*/
+
+#Frontpage {
+
+    /*Image top*/
+    &>:nth-child(1) {
+        background-color: blueviolet;
+        height: 500px;
+        width: 100%;
+    }
+
+    /*Text top*/
+    &>:nth-child(2) {
+        background-color: red;
+        height: 500px;
+        width: 100%;
+    }
+
+    /*Shoe flex box*/
+    &>:nth-child(3) {
+        height: 500px;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+
+    }
+
+}
 
 
 /*History Page*/
