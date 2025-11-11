@@ -4,7 +4,7 @@
 :root {
     --bg-colour: ;
     --nav-bg-colour: #ffa500;
-}
+    }
 
 /*Global*/
 * {
@@ -77,6 +77,26 @@
     }
 }
 
+/*Footer*/
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: var(--nav-bg-colour);
+    display: flex;
+
+    /*stores*/
+    &>:nth-child(1){
+        
+    }
+
+    /*Opening times*/
+    &>:nth-child(2){
+
+    }
+
+
+
+}
 
 
 /*Front page*/
@@ -86,24 +106,69 @@
     /*Image top*/
     &>:nth-child(1) {
         background-color: blueviolet;
-        height: 500px;
+        height: 600px;
         width: 100%;
+        position: relative;
+
+        &>div {
+            height: inherit;
+            width: inherit;
+
+            &>img {
+                object-fit: fill;
+                width: 100%;
+                height: inherit;
+                position: relative;
+            }
+        }
     }
 
-    /*Text top*/
+    /*Text con under*/
     &>:nth-child(2) {
-        background-color: red;
-        height: 500px;
         width: 100%;
-    }
+        padding-top: 50px;
 
-    /*Shoe flex box*/
-    &>:nth-child(3) {
-        height: 500px;
-        width: 100%;
-        background-color: bisque;
-        display: flex;
 
+        /*text div*/
+        &>:nth-child(1) {
+            width: 80%;
+            justify-self: center;
+            color: black;
+            line-height: 1.2;
+        }
+
+        /*Shoe flex box*/
+        &>:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-self: center;
+            justify-content: center;
+
+            &>div{
+                width: 20%;
+                margin: 3%;
+
+                &>:nth-child(1) {
+                    height: auto;
+                    width: 100%;
+                    /*img*/
+                    &>img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                /*Text*/
+                    &>p{
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+
+            }
+        }
     }
 
 }
