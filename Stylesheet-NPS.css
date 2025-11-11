@@ -1,0 +1,89 @@
+/*Stylesheet for Nike Pro Shop*/
+
+/*Colour Variables*/
+:root {
+    --bg-colour: ;
+    --nav-bg-colour: #ffa500;
+}
+
+/*Global*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Nav*/
+.Nav {
+    position: relative;
+    width: 100%;
+    background-color: var(--nav-bg-colour);
+
+
+    /*Logo*/
+    &>:nth-child(1) {
+        width: 10%;
+        height: 60px;
+        position: absolute;
+        top: 5%;
+        &>img {
+            object-fit: contain;
+            width: 75%;
+            height: inherit;
+        }
+    }
+
+    &>nav {
+        justify-self: center;
+        width: inherit;
+        height: 65px;
+
+        &>ul{
+            width: 75%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            justify-self: center;
+            height: 100%;
+            align-content: center;
+
+            &>li{
+                width: 15%;
+                text-align: center;
+                align-self: center;
+                height: 100%;
+                align-content: center;
+
+                &>a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+
+            }
+            }
+            &>li:hover {
+                background-color: blue;
+
+                &>a:hover{
+                    background-color: blue;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+/*Front page*/
+
+
+/*History Page*/
+
+
+/*About Page*/
+
+
+/*Contact page*/
