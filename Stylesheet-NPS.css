@@ -4,7 +4,7 @@
 :root {
     --bg-colour: ;
     --nav-bg-colour: #ffa500;
-    }
+}
 
 /*Global*/
 * {
@@ -83,19 +83,59 @@ footer {
     width: 100%;
     background-color: var(--nav-bg-colour);
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    color: white;
 
     /*stores*/
-    &>:nth-child(1){
-        
+    &>:nth-child(1) {
+        &>h4 {
+            font-size: 1.2rem;
+        }
+
+        &>p {}
     }
 
     /*Opening times*/
-    &>:nth-child(2){
+    &>:nth-child(2) {
+        &>h4 {
+            font-size: 1.2rem;
+        }
 
+        &>p {}
     }
 
+    /*Img flexbox*/
+    &>:nth-child(3) {
+        width: 33%;
 
+        &>h4 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
 
+        &>:nth-child(2) {
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+
+            &>img {
+                object-fit: contain;
+                width: 15%;
+                height: auto;
+            }
+        }
+
+        &>p {
+            font-size: 0.9rem;
+            justify-self: right;
+            text-decoration: underline;
+            padding-right: 25%;
+        }
+
+    }
 }
 
 
@@ -146,13 +186,14 @@ footer {
             justify-self: center;
             justify-content: center;
 
-            &>div{
+            &>div {
                 width: 20%;
                 margin: 3%;
 
                 &>:nth-child(1) {
                     height: auto;
                     width: 100%;
+
                     /*img*/
                     &>img {
                         object-fit: cover;
@@ -162,10 +203,10 @@ footer {
                 }
 
                 /*Text*/
-                    &>p{
-                        text-align: center;
-                        font-size: 1.2rem;
-                    }
+                &>p {
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
 
             }
         }
@@ -175,9 +216,278 @@ footer {
 
 
 /*History Page*/
+#History-Page {
+
+
+    /*Picture background container top*/
+    &>:nth-child(1) {
+
+        /*Img*/
+        &>:nth-child(1) {
+
+            &>img {}
+        }
+
+    }
+
+    /*Text container under*/
+    &>:nth-child(2) {
+
+        &>h2 {}
+
+        &>p {}
+    }
+
+    /*img olympic flex*/
+    &>:nth-child(3) {
+
+        /*Flex imgs*/
+        &>:nth-child(1) {
+
+            /*Img con*/
+            &>:nth-child(1) {
+
+                /*Img*/
+                &>img {}
+            }
+
+
+            &>:nth-child(2) {
+
+                /*Text*/
+                &>p {
+
+                }
+            }
+
+        }
+
+        /*3*/
+        &>:nth-child(2){
+
+            /*Title*/
+            &>h3{
+
+            }
+
+            /*Text*/
+            &>p{
+
+            }
+        }
+
+        /*4*/
+        &>:nth-child{
+            /*Title*/
+            &>h3{
+
+            }
+
+            /*Text*/
+            &>p{
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
 
 
 /*About Page*/
 
+#About-Page {
+
+    /*Top pic Con*/
+    &>:nth-child(1) {
+
+        /*Pic Con*/
+        &>:nth-child(1) {
+
+            /*Img*/
+            &>img {}
+        }
+    }
+
+    /*Text under Con*/
+    &>:nth-child(2){
+
+        /*Title*/
+        &>h2 {}
+
+        /*Text/img con start*/
+        &>:nth-child(2){
+
+            /*Img con*/
+            &>:nth-child(1){
+
+                /*Img*/
+                &>img{
+
+                }
+            }
+
+            /*Text*/
+            &>p{
+
+            }
+
+        }
+
+    }
+
+    /*Text con Historie*/
+    &>:nth-child(2){
+
+        /*Title*/
+        &>h3 {}
+    
+        /*Text*/
+        &>p{
+
+        }
+    }
+
+
+
+    /*Text con Om Nike Pro Shop*/
+     &>:nth-child(3){
+
+        /*Title*/
+        &>h3 {}
+
+        /*Img con*/
+        &>:nth-child(2){
+
+            /*Img*/
+            &>img{
+
+            }
+        }
+    
+        /*Text*/
+        &>p{
+
+        }
+    }
+
+    /*Text con Butiks-placeringer*/
+    &>:nth-child(4){
+
+        /*Title*/
+        &>h3 {}
+    
+        /*Text*/
+        &>p{
+
+        }
+    }
+
+    /*Text con Butiks-univers*/
+    &>:nth-child(2){
+
+        /*Img con*/
+        &>:nth-child(1){
+            
+            &>img{
+
+            }
+        }
+
+        /*Title*/
+        &>h3 {}
+    
+        /*Text*/
+        &>p{
+
+        }
+    }
+
+}
+
 
 /*Contact page*/
+
+#Contact-Page {
+
+    /*Top pic Con*/
+    &>:nth-child(1) {
+
+        /*Pic Con*/
+        &>:nth-child(1) {
+
+            &>img {}
+        }
+    }
+
+    /*Text under Con*/
+    &>:nth-child(2) {
+
+        /*Title*/
+        &>h2 {}
+
+        /*Img and text*/
+        &>:nth-child(2) {
+
+            /*Img con*/
+            &>:nth-child(1) {
+
+                /*Img*/
+                &>img {}
+            }
+
+            /*Text*/
+            &>p {}
+        }
+
+    }
+
+    /*Text Con 1*/
+    &>:nth-child(3) {
+
+        /*Title*/
+        &>h3 {}
+
+        /*Text*/
+        &>p {}
+
+    }
+
+    /*Text Con 2*/
+    &>:nth-child(4) {
+
+        /*Title*/
+        &>h3 {}
+
+        /*Text*/
+        &>p {}
+    }
+
+    /*Text Con 3*/
+    &>:nth-child(5) {
+
+        /*Title*/
+        &>h3 {}
+
+        /*Text*/
+        &>p {
+
+            /*List*/
+            &>ul {
+
+                /*List items*/
+                &>li {}
+            }
+
+        }
+
+
+
+    }
+
+}
